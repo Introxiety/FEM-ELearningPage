@@ -88,21 +88,72 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding: 1.6rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .flex {
     display: flex;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .center-align {
     align-items: center;
 }
 
+.btn-started {
+    width: 14rem;
+    font-size: 1.6rem;
+    color: var(--bg-white);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 2.3rem;
+}
+
+header {
+    gap: 3.8rem;
+}
 
 header nav {
     justify-content: space-between;
+
 }
 
 header nav img {
     width: 8.9rem;
 }
+
+header section {
+    gap: 2.6rem;
+}
+
+header nav a {
+    background-color: var(--bg-darkpurple);
+    padding: 1.1rem 2.4rem;
+}
+
+header section h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 5.1rem;
+}
+
+header section p {
+    font-size: 1.6rem;
+    color: var(--text-gray);
+}
+
+.btn-pink {
+    background: var(--gradient-pink);
+    padding: 1.5rem 3.8rem;
+    width: 16.7rem;
+}
+
+header img:nth-of-type(2) {}
