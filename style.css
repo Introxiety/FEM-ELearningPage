@@ -83,3 +83,26 @@ select {
     --gradient-pink: linear-gradient(to bottom, #f02aa6, #ff6f48);
     --gradient-purple: linear-gradient(to bottom, #4851ff, #f02aa6);
 }
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+}
+
+.center-align {
+    align-items: center;
+}
+
+
+header nav {
+    justify-content: space-between;
+}
+
+header nav img {
+    width: 8.9rem;
+}
