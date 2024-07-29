@@ -125,10 +125,12 @@ header {
     padding: 1.6rem;
     margin-bottom: 5rem;
     flex-direction: column;
+
 }
 
 header nav {
     justify-content: space-between;
+
 
 }
 
@@ -174,10 +176,12 @@ header section p {
 main {
     background-color: #F5F6FF;
     padding: 0 1.6rem 8rem 1.6rem;
+
 }
 
 main section {
     gap: 4rem;
+    flex-direction: column;
 }
 
 main section article:nth-of-type(1) {
@@ -241,21 +245,42 @@ footer a {
     header {
         flex-direction: row;
         gap: 9.9rem;
+        padding: 2.4rem 4rem;
+
+    }
+
+    header nav {
+        flex-grow: 0;
+        max-width: 100%;
+        flex-shrink: 1;
+        align-items: flex-start;
     }
 
     header section {
         flex-direction: row;
-        position: relative;
+        height: 35rem;
     }
 
     header article {
-        width: 39.8rem;
+        min-width: 39.8rem;
     }
 
     header picture {
         min-width: 64rem;
-        position: absolute;
-        right: -30rem;
-        top: -23rem;
+        transform: translate(-5rem, -30rem);
+    }
+
+
+    main section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main article:nth-of-type(1) {
+        height: 25.9rem;
+    }
+
+    main article {
+        width: 34rem;
     }
 }
