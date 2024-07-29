@@ -132,11 +132,19 @@ header nav {
 
 }
 
-header nav img {
+picture {
+    margin-top: 6rem;
+}
+
+header nav picture {
     width: 8.9rem;
 }
 
 header section {
+    flex-direction: column;
+}
+
+header section article {
     gap: 2.6rem;
     flex-direction: column;
 }
@@ -232,5 +240,22 @@ footer a {
 @media (min-width: 48rem) {
     header {
         flex-direction: row;
+        gap: 9.9rem;
+    }
+
+    header section {
+        flex-direction: row;
+        position: relative;
+    }
+
+    header article {
+        width: 39.8rem;
+    }
+
+    header picture {
+        min-width: 64rem;
+        position: absolute;
+        right: -30rem;
+        top: -23rem;
     }
 }

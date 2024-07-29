@@ -15,18 +15,25 @@
 </head>
 
 <body>
-  <header class="flex">
+  <header class="flex-column">
     <nav class="flex center-align">
       <img src="starter-code/assets/logo-dark.svg" alt="logo">
       <a href="" class="btn-started">Get Started</a>
     </nav>
     <section class="flex">
-      <h1>Maximize skill, minimize budget</h1>
-      <p> Our modern courses across a range of in-demand skills will give you the
-        knowledge you need to live the life you want.</p>
-      <a href="" class="btn-started btn-pink">Get Started</a>
+      <article class="flex">
+        <h1>Maximize skill, minimize budget</h1>
+        <p> Our modern courses across a range of in-demand skills will give you the
+          knowledge you need to live the life you want.</p>
+        <a href="" class="btn-started btn-pink">Get Started</a>
+      </article>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="starter-code/assets/image-hero-desktop.png">
+        <source media="(min-width: 768px)" srcset="starter-code/assets/image-hero-tablet.png">
+        <img src="starter-code/assets/image-hero-mobile@2x.png" alt="Responsive Image">
+      </picture>
     </section>
-    <img src="starter-code/assets/image-hero-mobile@2x.png" alt="" class="header-hero">
+
   </header>
   <main>
     <section class="grid">
