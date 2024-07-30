@@ -149,6 +149,12 @@ main {
     justify-self: center;
     align-self: center;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: auto;
+    grid-area:
+        '. intro .'
+        ''
+    ;
 }
 
 main section {
