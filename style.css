@@ -305,7 +305,6 @@ footer a {
 
 
     main {
-        max-width: 1024px;
         grid-template-columns: 1.6rem 68.9rem 1.6rem;
         grid-template-rows: auto;
     }
@@ -318,4 +317,39 @@ footer a {
         grid-template-columns: 1fr 1fr
     }
 
+}
+
+@media (min-width: 90rem) {
+    body {
+        max-width: 144rem;
+    }
+
+    main {
+        max-width: 1024px;
+        grid-template-columns: 1.6rem 111rem 1.6rem;
+        grid-template-rows: auto;
+    }
+
+    main section:nth-of-type(1) article {
+        min-width: 45.7rem;
+
+    }
+
+    main section:nth-of-type(1) article h1 {
+        font-size: 5.6rem;
+    }
+
+    main section:nth-of-type(1) article p {
+        font-size: 1.8rem;
+    }
+
+    picture {
+        min-width: 64rem;
+        z-index: -1;
+        transform: translate(-5rem, -5rem);
+    }
+
+    main section:nth-of-type(2) {
+        grid-template-columns: 1fr 1fr 1fr
+    }
 }
