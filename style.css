@@ -90,8 +90,8 @@ body {
     font-style: normal;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 42.5rem;
+
+    overflow: hidden;
 }
 
 a {
@@ -144,8 +144,13 @@ header nav a {
 
 
 main {
+
     max-width: 42.5rem;
+    justify-self: center;
+    align-self: center;
     display: grid;
+    grid-template-columns: .1fr 1fr .1fr;
+    grid-template-rows: auto;
     grid-template-columns: 1.6rem 34.3rem 1.6rem;
     grid-template-rows: 63.2rem;
     grid-template-areas:
@@ -214,8 +219,11 @@ main section:nth-of-type(2) article:nth-of-type(1) {
     font-size: 2.4rem;
     color: var(--bg-white);
     font-weight: 800;
-    padding: 2.4rem 2.8rem;
     border-radius: 1rem;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) {
+    padding: 5.6rem 3.2rem;
 }
 
 .services-card {
@@ -269,9 +277,7 @@ footer a {
 }
 
 @media (min-width: 48rem) {
-    body {
-        max-width: 76.8rem;
-    }
+    body {}
 
     header {
         flex-direction: row;
@@ -298,12 +304,15 @@ footer a {
         min-width: 64rem;
         z-index: -1;
         transform: translate(-5rem, -5rem);
+
     }
 
 
     main {
-        grid-template-columns: 1.6rem 68.9rem 1.6rem;
+        grid-template-columns: 1.6rem 70.9rem 1.6rem;
         grid-template-rows: auto;
+        max-width: 76.8rem;
+
     }
 
     .services-card {
